@@ -14,6 +14,7 @@
         android:layout_height="46dp"
         android:id="@+id/titlenote"
         android:textColor="@color/black"
+        android:textColorHint="#081d70"
         android:paddingLeft="10dp"
         android:background="@drawable/edittext_bg"
         android:hint="Title"
@@ -23,7 +24,9 @@
         android:background="@drawable/edittext_bg"
         android:layout_height="wrap_content"
         android:id="@+id/contentnote"
-        android:hint="Note Content"
+        android:hint="Write Note Content"
+        android:textColor="@color/black"
+        android:textColorHint="#081d70"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:layout_marginTop="16dp"
@@ -36,6 +39,7 @@
         android:id="@+id/savebutton"
         android:layout_marginTop="16dp"
         android:text="Save Note"
+        android:textColor="@color/black"
         />
 
 
@@ -43,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Notes:- "
+        android:textColor="@color/black"
         android:id="@+id/savednotes"
         android:layout_marginTop="15dp"
         android:paddingBottom="10dp"

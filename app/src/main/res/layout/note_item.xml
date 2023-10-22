@@ -13,12 +13,14 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:id="@+id/titletextview"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:text="Note Title"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:id="@+id/contenttextview"
         android:textSize="15sp"
         android:textStyle="normal"
