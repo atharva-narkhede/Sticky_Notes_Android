@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             saveNotestoPreferences();
             createNoteview(note);
             clearInputFields();
+            Toast.makeText(MainActivity.this,"Saved Successfully",Toast.LENGTH_SHORT).show();
 
         }
     }
@@ -99,10 +101,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        //noteView.click
         noteView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                showDeleteDialog(note);
+                showDialog(note);
                 return true;
             }
         });
@@ -118,10 +121,17 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    private void showDeleteDialog(final Note note) {
+    private void showDialog(final Note note) {
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setTitle("Delete this note");
-        builder.setMessage("Are you sure you want to delete this Note");
+        builder.setTitle("Please Select");
+        builder.setMessage("Do you want to Edit / Delete");
+        builder.setNeutralButton("Edit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                editnote(note);
+            }
+        });
+
         builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -130,6 +140,16 @@ public class MainActivity extends AppCompatActivity {
         });
         builder.setNegativeButton("Cancel",null);
         builder.show();
+    }
+
+    private void editnote(final Note note) {
+        EditText titleedtxt=findViewById(R.id.titlenote);
+        EditText contentedtxt=findViewById(R.id.contentnote);
+        titleedtxt.getText().clear();
+        contentedtxt.getText().clear();
+        titleedtxt.setText(note.getTitle());
+        contentedtxt.setText(note.getContent());
+        deleteNoteandRefresh(note);
     }
 
     private void deleteNoteandRefresh(Note note) {
