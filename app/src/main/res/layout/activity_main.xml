@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADD8E6"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/titlenote"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Title"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_bg"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentnote"
+        android:hint="Note Content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebutton"
+        android:layout_marginTop="16dp"
+        android:text="Save Note"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notes:- "
+        android:id="@+id/savednotes"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notecontainer"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</LinearLayout>
