@@ -4,10 +4,9 @@ Sticky Notes App is a simple and intuitive Android application developed in Andr
 
 ## Screenshots
 <p align="center">
-  <img src="https://github.com/atharva-narkhede/Sticky_Notes_Android/assets/106006803/0f58d9cd-d9ca-4c05-91f9-536ae1fed3be" width="300">
-   <img src="https://github.com/atharva-narkhede/Sticky_Notes_Android/assets/106006803/fcb9319a-6100-4a44-bd3a-175d52844a58" width="300">
+  <img src="https://github.com/atharva-narkhede/Sticky_Notes_Android/assets/106006803/89f07c77-1b41-4da6-8b55-569b060c7138" width="300">
+   <img src="https://github.com/atharva-narkhede/Sticky_Notes_Android/assets/106006803/016c10c2-ad09-4627-aa54-1930778eb848" width="300">
 </p>
-
 
 ## Features
 
@@ -39,7 +38,7 @@ Sticky Notes App is a simple and intuitive Android application developed in Andr
 
 You can download the Sticky Notes App from the link below:
 
-[Download Sticky Notes App](https://drive.google.com/file/d/12ZaDQpcQk2-XGJjLBl-agBV4flMuJWUe/view?usp=sharing)
+[Download Sticky Notes App](https://drive.google.com/file/d/1iBhGZmvz3ExERpE4U-_3H8m_OgoPyKK9/view?usp=sharing)
 
 ## Troubleshooting
 
