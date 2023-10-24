@@ -20,14 +20,19 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private static final String PREFS_NAME = "NotePrefs";
     private static final String KEY_NOTE_COUNT = "NoteCount";
     private LinearLayout notescontainer;
     private List<Note> NoteList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         notescontainer=findViewById(R.id.notecontainer);
         Button savebutton=findViewById(R.id.savebutton);
 
@@ -183,4 +188,5 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
 
     }
+
 }
